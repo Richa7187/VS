@@ -1,0 +1,94 @@
+.cardPage {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  background-color: #efefef;
+  border-top: 4px solid #bfbfbf;
+}
+
+.cardSection {
+  display: flex;
+  justify-content: space-between;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75vw;
+  max-width: 720px;
+  height: 75vw;
+  max-height: 720px;
+}
+
+.cardContainer [class^="card"] {
+  display: flex;
+  width: 100%;
+  max-width: 33%;
+  color: #ffffff;
+  font-size: 140px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card1 {
+  background-color: #6f98a8;
+}
+.card2,
+.card4 {
+  background-color: #2b8ead;
+}
+.card3,
+.card5,
+.card9 {
+  background-color: #2f454e;
+}
+.card6,
+.card7 {
+  background-color: #bfbfbf;
+}
+.card8 {
+  background-color: #6f98a8;
+}
+
+.buttons {
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  padding-top: 2%;
+}
+button {
+  display: block;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #72c3dc;
+  border: 0;
+  margin: 15% auto;
+  border-bottom: 4px solid #2b8ead;
+}
+button:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+p {
+  color: #333333;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+    .cardContainer [class^="card"] {
+        font-size: 100px;
+    }
+    .button{
+        width: 100px;
+    }
+}
+@media (max-width: 500px) {
+    .cardContainer [class^="card"] {
+        font-size: 80px;
+    }
+    button{
+        width: 90px;
+        height: 30px;
+    }
+}
